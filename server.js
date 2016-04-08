@@ -1,6 +1,4 @@
 var http = require('http');
-var zmq = require('zmq');
-console.log('hello world');
 http.createServer(function (req, res) {
     console.log('Got request for ' + req.url);
     res.writeHead(200, {'Content-Type': 'text/html'});
